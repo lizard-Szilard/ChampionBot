@@ -1,0 +1,37 @@
+{%block content%}
+{# if the column of the database modified this should rewrite. 
+This is for represent data user in /deleteme command.
+The View component: `ViewMain.view_represent_data` in `jobView/view_main.py`.
+#}
+<b>This is your data</b>
+
+<b>USERNAME</b>:
+ {{row.username}}
+
+<b>CHAT ID:</b> - <b>USER ID:</b> 
+  {{row.chat_id}}
+  {{row.user_id}}
+
+<b>CONTACT NAME</b> - <b>PHONE</b>
+ {{row.name_contact}}
+ {{row.contact}}
+
+<b>LATITUDE:</b>
+ {{row.latitude}}
+
+<b>LONGITUDE:</b>
+ {{row.longitude}}
+
+<b>TIMZONE:</b>
+ {{row.tzinfo}}
+
+<b>SIGNUP Date Time:</b>
+ {{row.signup_date}}
+
+<b>YOUE TEAM FAVORITE:</b>
+{%for champion in row.champion_league%}
+ {{champion.home_team}}
+{%endfor%}
+
+Send /cancel for cancel delete your data
+{%endblock%}

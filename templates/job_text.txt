@@ -1,0 +1,22 @@
+{%block content%}
+{#The main responsibility of this template is for send message by the job.queue.
+View component: `dict_init_context` in `utills.utils.py`
+#}
+<b>30 minutes again</b> 
+<b>Home Team:</b> and <b>Round:</b> 
+{{row.home_team}}  {{row.round_number}}
+
+<b>Away Team:</b> and <b>Result:</b>
+{{row.away_team}}  {{row.result_final}}
+
+<b>Time Zone:</b>
+{{ dict_row.zone_name }}
+
+<b>Date Match:</b>
+{{dict_row.match_date}}
+
+<b>Location:</b>
+{{row.location}}
+
+Send /help for more feature and Command
+{%endblock%}

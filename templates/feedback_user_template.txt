@@ -1,0 +1,36 @@
+{%block content%}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TEXT USER:
+{{text_feedback}}
+
+ID_DATABASE:
+{{row_user_db.id}}
+
+USERNAME:
+{{row_user_db.username}}
+
+USER_ID:
+{{row_user_db.user_id}}
+
+CHAT_ID:
+{{row_user_db.chat_id}}
+{{row_user_db}}
+
+CONTACT PHONE:
+{{row_user_db.Contact}}
+
+NAME CONTACT:
+{{row_user_db.name_contact}}
+
+LOCATION:
+Latitude:
+{{row_user_db.latitude}}
+Longitude
+{{row_user_db.longitude}}
+Tzinfo:
+{{row_user_db.tzinfo}}
+
+SIGNUP DATETIME:
+{{row_user_db.signup_date}}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+{%endblock%}

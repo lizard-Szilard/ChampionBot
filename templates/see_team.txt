@@ -1,0 +1,28 @@
+{%block content%}
+{#This is for represent the schedule of a team in /seeteam command
+View component: `ViewMain.message_seeteam` in `jobView.view_main.py`
+#}
+<b>Home Team:</b> and <b>Round:</b> 
+{%for x in row %}
+{{x.home_team }}  {{x.round_number}}
+{%endfor%}
+
+<b>Away Team:</b> and <b>Result:</b>
+{%for x in row%}    
+{{x.away_team}}  {{x.result_final}}
+{%endfor%}
+
+<b>Time Zone:</b>
+{{ dict_row }}
+
+<b>Date Match:</b>
+{%for x in row -%}
+    {{- x.timezone}}
+{%endfor%}
+
+<b>Location:</b>
+{%for x in row -%}
+    {{- x.location}}
+{%endfor%}
+Send /help for more feature and Command
+{%endblock%}

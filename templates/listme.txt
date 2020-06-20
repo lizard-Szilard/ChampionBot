@@ -1,0 +1,19 @@
+{%block content%}
+{# `x` variable is list object contain `home_team` column of the database the schedule of league 
+which has no duplicate. 
+This is for represent lits of team favorite a user in /listme command
+The View component is `my_fav` in `controller/control_myfav.py`.
+#}
+
+<b>Your Team Favorite:</b>
+{%for x in row %}
+<b>{{x}}</b>
+{%endfor%}
+
+<b>Your Timezone:</b>
+<b>{{zone}}</b>
+
+<b>More Information</b> about Club.
+Example:
+/seeteam <b>arsenal.</b>
+{%endblock%}
