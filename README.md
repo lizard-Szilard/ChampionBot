@@ -41,7 +41,7 @@ SQLALCHEMY_URI = 'postgres+psycopg2://postgres:postgres@localhost/postgres'
 DATABASE_URL = 'postgresql://postgres:postgres@localhost:5432/postgres'
 ```
 
-### Run the bot
+#### Run the bot
 ```bash
 $ sudo systemctl start postgresql.service
 $ cd ChampionBot/
