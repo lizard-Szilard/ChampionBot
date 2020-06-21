@@ -4,7 +4,7 @@ This is repository code for **unofficial Champion UEFA league telegram bot**.
 
 ### **NOTICE:** 
 1. The documentation of repository code needs improvent.
-2. This bot used the [pickle module python](https://docs.python.org/3/library/pickle.html) for store some information about the current user and/or chat for later use, it's not good approachment to use the pickle module python for store a information about the bot becuase the pickle module python is not secure, [you can change that approachment](https://github.com/lizard-Szilard/ChampionBot#storing-data)
+2. This bot used the [pickle module python](https://docs.python.org/3/library/pickle.html) for store some information about the current user and/or chat for later use, it's not good approachment to use the pickle module python for store a information about the bot becuase the pickle module python is not secure, [you can change that approachment](https://github.com/lizard-Szilard/ChampionBot#guide-modify-the-schedule-of-league)
 3. We tested this bot only on Debian 10 (Buster) distro based on the GNU/Linux system.
 
 ## Description
@@ -86,7 +86,7 @@ Put your CSV in the root of directory. You should remove the header of CSV, That
 A `date_datetime` object should following `2019-09-17 23:55:00` format.
 
 If you modify the column name, you should edit the templates. The Output of templates is directly from postgresql (psycopg2 driver).
-## The rules
+#### The rules
 - You can modify all of the name of column except list below.
  * Don't change `home_team` column of the database.
  * Don't change `date_datetime` column and format.
