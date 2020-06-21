@@ -4,14 +4,14 @@ This is repository code for **unofficial Champion UEFA league telegram bot**.
 
 ### **NOTICE:** 
 1. The documentation of repository code needs improvent.
-2. This bot used the [pickle module python](https://docs.python.org/3/library/pickle.html) for store some information about the current user and/or chat for later use, it's not good approachment to use the pickle module python for store a information about the bot becuase the pickle module python is not secure, [you can change that approachment](https://github.com/lizard-Szilard/ChampionBot#guide-modify-the-schedule-of-league)
+2. This bot used the [pickle module python](https://docs.python.org/3/library/pickle.html) for store some information about the current user and/or chat for later use, it's not good approachment to use the pickle module python for store a information about the bot becuase the pickle module python is not secure, [you can change that approachment](https://github.com/lizard-Szilard/ChampionBot#storing-data)
 3. We tested this bot only on Debian 10 (Buster) distro based on the GNU/Linux system.
 
 ## Description
 
 This is a telegram bot which can reminder the user of the bot about the schedule of Champion UEFA league. It's only compatible with Python version 3.5+ and use a [Telegram wrapper API bot (python-telegram-bot)](https://github.com/python-telegram-bot/python-telegram-bot). 
 
-This bot is based on **[MVC model](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)**. Also the bot can manage other schedules football leagues but requires changes on the **model database component** and the **view component** (needs documentation). 
+This bot is based on **[MVC model](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)**. Also the bot can manage other schedules football leagues but requires changes on the **model database component** and the **view component** ([Guide](https://github.com/lizard-Szilard/ChampionBot#guide-modify-the-schedule-of-leagues)).
 The schedule of Champion UEFA league from [fixturedownload](https://fixturedownload.com/)
 
 ## Installation
@@ -72,7 +72,7 @@ Actually use the pickle module it is enough, but I give you an option.
 Good approachment is using the **PTB** [telegram.ext.basepersistence](https://python-telegram-bot.readthedocs.io/en/latest/telegram.ext.basepersistence.html) module.
 After write code for **BasePersistance** you can put that code in the `ChampionBot/pushdb/` directory, it's for the **model component** based on MVC architecture. Then you can change some code in file `ChampionBot/main.py` on line 54-57, see [telegram.ext.Updater](https://python-telegram-bot.readthedocs.io/en/stable/telegram.ext.updater.html#telegram.ext.Updater.persistence).
 
-## Guide modify the schedule of league
+## Guide modify the schedule of leagues
 
 First of all you needs schedules of league in a CSV file. The CSV should delimetry by comma.
 * CSV file of the schedule of league.
